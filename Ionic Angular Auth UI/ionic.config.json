@@ -1,0 +1,9 @@
+{
+  "name": "auths-app",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    }
+  },
+  "type": "angular"
+}

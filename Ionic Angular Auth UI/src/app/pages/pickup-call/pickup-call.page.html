@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pickup Call</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img
+    src="https://www.here.com/sites/g/files/odxslz256/files/styles/carousel_large/public/2021-09/Alternative-routes_0.webp?itok=NoalCMX6"
+  />
+  <ion-card>
+    <ion-card-content>
+      <p>Address: fake street, 111</p>
+      <p>Complement: Apto, 222</p>
+      <p>Neighborhood: neighborhood</p>
+      <p>Zip-Code: 1232345</p>
+      <p>City: Santa Malco</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item lines="inset">
+      <ion-label position="floating">Notes</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button
+    (click)="newPickUpCall()"
+    size="full"
+    color="success"
+    style="margin: 23px"
+    >Create PickUp Call</ion-button
+  >
+</ion-content>

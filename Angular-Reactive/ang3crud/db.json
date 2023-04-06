@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "productName": "Game",
+      "category": "Vegetables",
+      "quality": "Brand New",
+      "price": 150,
+      "comment": "stable",
+      "date": "2023-01-19T00:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "Oranges",
+      "category": "Vegetables",
+      "quality": "Second hand",
+      "price": 34,
+      "comment": "old oranges",
+      "date": "2023-03-30T23:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Blender",
+      "category": "Eletronics",
+      "quality": "Refubrished",
+      "price": 67,
+      "comment": "discount blender",
+      "date": "2023-03-23T00:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "Apple",
+      "category": "Fruits",
+      "quality": "Brand New",
+      "price": 56,
+      "comment": "fresh fruit",
+      "date": "2023-03-29T23:00:00.000Z",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

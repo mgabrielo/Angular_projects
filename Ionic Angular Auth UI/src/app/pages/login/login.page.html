@@ -1,0 +1,82 @@
+<ion-content>
+  <div class="flex-center">
+    <form [formGroup]="form">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title color="success">Ionic Auth</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input
+              type="email"
+              formControlName="email"
+              placeholder="Enter Email"
+            ></ion-input>
+          </ion-item>
+
+          <app-err-msg-alter
+            [field]="form"
+            empty_message="Email is Required"
+          ></app-err-msg-alter>
+
+          <app-err-msg-invalid
+            [invalid_field]="form"
+            invalid_message="Email is Invalid"
+          ></app-err-msg-invalid>
+
+          <!-- <ion-label
+            color="danger"
+            *ngIf="!form.get('email')?.value && form.get('email')?.touched"
+            >Email Is Required</ion-label
+          > -->
+          <!-- <ion-label
+            color="danger"
+            [hidden]="!form.get('email')?.value && form.get('email')?.touched"
+            *ngIf="form.get('email')?.touched && form.get('email')?.errors"
+            >Email Is Invalid</ion-label
+          > -->
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input
+              type="password"
+              formControlName="password"
+              placeholder="Enter Password"
+            ></ion-input>
+          </ion-item>
+          <ion-label
+            color="danger"
+            *ngIf="!form.get('password')?.value && form.get('password')?.touched"
+            >Password Is Required</ion-label
+          >
+          <ion-button
+            color="dark"
+            fill="clear"
+            size="full"
+            style="margin-top: 15px"
+            [disabled]="!form.get('email')?.valid"
+            (click)="forgotEmailPassword()"
+            >Forgot Email/Password?</ion-button
+          >
+          <ion-button
+            color="success"
+            size="full"
+            style="margin-top: 15px"
+            [disabled]="!form.valid"
+            (click)="login()"
+            >Login</ion-button
+          >
+          <ion-button
+            color="success"
+            fill="clear"
+            style="margin-top: 15px"
+            size="full"
+            (click)="register()"
+            >Register</ion-button
+          >
+        </ion-card-content>
+      </ion-card>
+    </form>
+  </div>
+</ion-content>

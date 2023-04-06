@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Auths App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="success">
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://freesvg.org/img/abstract-user-flat-4.png" />
+      </ion-avatar>
+      <ion-label
+        ><h1>Grey Scott</h1>
+        <p>Gathered : <span class="money">£35,000</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-pickup-call-card status="hold" updateAt="25/04/2022 16:30" createdAt="24/04/2022 15:50"
+  note="Notes: we are ready to roll from yesterday till tomorrow">
+    <ion-card-header header>
+      <ion-card-subtitle>Last Pick Up call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button color="success" fill="clear" size="full" footer (click)="goToPickUpCalls()">See All...</ion-button>
+  </app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" (click)="newPickUpCall()">
+      <ion-icon name="Add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

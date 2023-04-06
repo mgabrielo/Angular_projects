@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button title=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="font-size: 18px; font-weight: bold"
+        >How Can You Do To Protect Your Account?</ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>I want to use Text-Password</ion-label>
+        <ion-radio slot="start" value="Client"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>I want to use Voice-Recognition</ion-label>
+        <ion-radio slot="start" value="Partner"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>I want to use Face-Recognition</ion-label>
+        <ion-radio slot="start" value="Executive"></ion-radio>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="margin-top: 30px">
+    <ion-card-header>
+      <ion-card-title style="font-size: 18px; font-weight: bold"
+        >Contact Info</ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" placeholder="Enter Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" placeholder="Enter Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" placeholder="Enter Password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input type="tel" placeholder="Enter Phone Number"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="margin-top: 30px">
+    <ion-card-header>
+      <ion-card-title style="font-size: 18px; font-weight: bold"
+        >Address Info</ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Address</ion-label>
+        <ion-input type="text" placeholder="Enter Address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Number</ion-label>
+        <ion-input type="tel" placeholder="Enter Number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Neighborhood</ion-label>
+        <ion-input type="text" placeholder="Enter Neighborhood"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Complement</ion-label>
+        <ion-input type="text" placeholder="Enter Complement"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Zip-Code</ion-label>
+        <ion-input type="tel" placeholder="Enter Zip-Code"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">State</ion-label>
+        <ion-input type="text" placeholder="Enter State"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">City</ion-label>
+        <ion-input type="text" placeholder="Enter City"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button size="full" color="light" (click)="register()"
+    >Register</ion-button
+  >
+</ion-content>
